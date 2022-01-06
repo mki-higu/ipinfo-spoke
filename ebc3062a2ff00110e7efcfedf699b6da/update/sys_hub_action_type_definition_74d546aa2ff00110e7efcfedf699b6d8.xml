@@ -1,0 +1,2085 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Get geographic data from a public IP address.</description>
+        <ih_action>false</ih_action>
+        <internal_name>get_geographic_data_from_ip</internal_name>
+        <label_cache>[{"name":"{{action.ip_address}}","label":"action➛IP address","type":"action","ref":""},{"name":"{{step[bb5c2541-b5a0-4951-9719-cc29e06c1288].response_body}}","label":"step➛Call IPInfo REST API➛Response Body","type":"step","ref":""},{"name":"{{step[bb5c2541-b5a0-4951-9719-cc29e06c1288].status_code}}","label":"step➛Call IPInfo REST API➛Status Code","type":"step","ref":""},{"name":"{{step[632b3df1-2d98-4d5c-b137-249c8f2cc47f].variable}}","label":"step➛Parse Returned Data➛variable","type":"step","ref":""},{"name":"{{step[632b3df1-2d98-4d5c-b137-249c8f2cc47f].hostname}}","label":"step➛Parse Returned Data➛hostname","type":"step","ref":""},{"name":"{{step[632b3df1-2d98-4d5c-b137-249c8f2cc47f].city}}","label":"step➛Parse Returned Data➛city","type":"step","ref":""},{"name":"{{step[632b3df1-2d98-4d5c-b137-249c8f2cc47f].region}}","label":"step➛Parse Returned Data➛region","type":"step","ref":""},{"name":"{{step[632b3df1-2d98-4d5c-b137-249c8f2cc47f].country}}","label":"step➛Parse Returned Data➛country","type":"step","ref":""},{"name":"{{step[632b3df1-2d98-4d5c-b137-249c8f2cc47f].latitude}}","label":"step➛Parse Returned Data➛latitude","type":"step","ref":""},{"name":"{{step[632b3df1-2d98-4d5c-b137-249c8f2cc47f].longitude}}","label":"step➛Parse Returned Data➛longitude","type":"step","ref":""}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>Get Geographic Data from IP</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <state>draft</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-05 06:39:40</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>74d546aa2ff00110e7efcfedf699b6d8</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>Get Geographic Data from IP</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="IPInfo Spoke" source="x_425817_ipinfo_sp">ebc3062a2ff00110e7efcfedf699b6da</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">ebc3062a2ff00110e7efcfedf699b6da</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_74d546aa2ff00110e7efcfedf699b6d8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-06 06:24:03</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=74d546aa2ff00110e7efcfedf699b6d8"/>
+    <sys_variable_value action="delete_multiple" query="document_key=74d546aa2ff00110e7efcfedf699b6d8"/>
+    <sys_element_mapping action="delete_multiple" query="id=74d546aa2ff00110e7efcfedf699b6d8"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>city</field>
+        <id>74d546aa2ff00110e7efcfedf699b6d8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-06 02:57:46</sys_created_on>
+        <sys_id>d4ac9e7a2f700110e7efcfedf699b681</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-06 02:57:46</sys_updated_on>
+        <table>var__m_sys_hub_action_output_74d546aa2ff00110e7efcfedf699b6d8</table>
+        <value>{{step[632b3df1-2d98-4d5c-b137-249c8f2cc47f].city}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>country</field>
+        <id>74d546aa2ff00110e7efcfedf699b6d8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-06 02:57:46</sys_created_on>
+        <sys_id>50ac9e7a2f700110e7efcfedf699b681</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-06 02:57:46</sys_updated_on>
+        <table>var__m_sys_hub_action_output_74d546aa2ff00110e7efcfedf699b6d8</table>
+        <value>{{step[632b3df1-2d98-4d5c-b137-249c8f2cc47f].country}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>hostname</field>
+        <id>74d546aa2ff00110e7efcfedf699b6d8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-06 02:57:46</sys_created_on>
+        <sys_id>14ac9e7a2f700110e7efcfedf699b681</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-06 02:57:46</sys_updated_on>
+        <table>var__m_sys_hub_action_output_74d546aa2ff00110e7efcfedf699b6d8</table>
+        <value>{{step[632b3df1-2d98-4d5c-b137-249c8f2cc47f].hostname}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ip_address</field>
+        <id>74d546aa2ff00110e7efcfedf699b6d8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-06 02:57:46</sys_created_on>
+        <sys_id>5cac9e7a2f700110e7efcfedf699b681</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-06 02:57:46</sys_updated_on>
+        <table>var__m_sys_hub_action_output_74d546aa2ff00110e7efcfedf699b6d8</table>
+        <value>{{action.ip_address}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>latitude</field>
+        <id>74d546aa2ff00110e7efcfedf699b6d8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-06 02:57:46</sys_created_on>
+        <sys_id>98ac9e7a2f700110e7efcfedf699b681</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-06 02:57:46</sys_updated_on>
+        <table>var__m_sys_hub_action_output_74d546aa2ff00110e7efcfedf699b6d8</table>
+        <value>{{step[632b3df1-2d98-4d5c-b137-249c8f2cc47f].latitude}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>longitude</field>
+        <id>74d546aa2ff00110e7efcfedf699b6d8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-06 02:57:46</sys_created_on>
+        <sys_id>d0ac9e7a2f700110e7efcfedf699b682</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-06 02:57:46</sys_updated_on>
+        <table>var__m_sys_hub_action_output_74d546aa2ff00110e7efcfedf699b6d8</table>
+        <value>{{step[632b3df1-2d98-4d5c-b137-249c8f2cc47f].longitude}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>region</field>
+        <id>74d546aa2ff00110e7efcfedf699b6d8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-06 02:57:46</sys_created_on>
+        <sys_id>10ac9e7a2f700110e7efcfedf699b682</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-06 02:57:46</sys_updated_on>
+        <table>var__m_sys_hub_action_output_74d546aa2ff00110e7efcfedf699b6d8</table>
+        <value>{{step[632b3df1-2d98-4d5c-b137-249c8f2cc47f].region}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=74d546aa2ff00110e7efcfedf699b6d8^sys_idNOT IN532956f62f700110e7efcfedf699b69c,9b36caaa2ff00110e7efcfedf699b6d1"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Get Geographic Data from IP">74d546aa2ff00110e7efcfedf699b6d8</action>
+        <cid>632b3df1-2d98-4d5c-b137-249c8f2cc47f</cid>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Parse Returned Data</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-06 02:42:42</sys_created_on>
+        <sys_id>532956f62f700110e7efcfedf699b69c</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="IPInfo Spoke">ebc3062a2ff00110e7efcfedf699b6da</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-06 02:43:16</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=532956f62f700110e7efcfedf699b69c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>532956f62f700110e7efcfedf699b69c</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-06 02:42:43</sys_created_on>
+        <sys_id>3b2956f62f700110e7efcfedf699b6d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-06 02:42:43</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>532956f62f700110e7efcfedf699b69c</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-06 02:42:43</sys_created_on>
+        <sys_id>b32956f62f700110e7efcfedf699b6d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-06 02:42:43</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+    // Only parse the response body if the status code is 200  
+      if (inputs.status_code == '200'){
+      
+            // Parse the response_body input variable and save parsed object as responseBody
+            var responseBody = JSON.parse(inputs.response_body);
+      
+            // Map the parsed responseBody values to output variables
+            outputs.hostname = responseBody.hostname;
+      outputs.city = responseBody.city;
+      outputs.region = responseBody.region;
+            outputs.country = responseBody.country;
+          
+            // split the returned location into separate latitude and longitude values
+            var locArray = responseBody.loc.split(",");
+            outputs.latitude = locArray[0];
+            outputs.longitude = locArray[1];
+      }
+})(inputs, outputs);</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=532956f62f700110e7efcfedf699b69c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>532956f62f700110e7efcfedf699b69c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-06 02:42:43</sys_created_on>
+        <sys_id>7f2956f62f700110e7efcfedf699b6d3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-06 02:42:43</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>response_body</field>
+        <id>532956f62f700110e7efcfedf699b69c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-06 02:42:43</sys_created_on>
+        <sys_id>bf2956f62f700110e7efcfedf699b6d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-06 02:42:43</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_532956f62f700110e7efcfedf699b69c</table>
+        <value>{{step[bb5c2541-b5a0-4951-9719-cc29e06c1288].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>532956f62f700110e7efcfedf699b69c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-06 02:42:43</sys_created_on>
+        <sys_id>b72956f62f700110e7efcfedf699b6d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-06 02:42:43</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>status_code</field>
+        <id>532956f62f700110e7efcfedf699b69c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-06 02:42:43</sys_created_on>
+        <sys_id>732956f62f700110e7efcfedf699b6d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-06 02:42:43</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_532956f62f700110e7efcfedf699b69c</table>
+        <value>{{step[bb5c2541-b5a0-4951-9719-cc29e06c1288].status_code}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=532956f62f700110e7efcfedf699b69c^sys_idNOT IN2b2956f62f700110e7efcfedf699b6aa,632956f62f700110e7efcfedf699b6a3"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>status_code</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Parse Returned Data">532956f62f700110e7efcfedf699b69c</model>
+        <model_id>532956f62f700110e7efcfedf699b69c</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_532956f62f700110e7efcfedf699b69c</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-06 02:42:42</sys_created_on>
+        <sys_id>2b2956f62f700110e7efcfedf699b6aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">ebc3062a2ff00110e7efcfedf699b6da</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-06 02:42:42</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>response_body</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Parse Returned Data">532956f62f700110e7efcfedf699b69c</model>
+        <model_id>532956f62f700110e7efcfedf699b69c</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_532956f62f700110e7efcfedf699b69c</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-06 02:42:42</sys_created_on>
+        <sys_id>632956f62f700110e7efcfedf699b6a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">ebc3062a2ff00110e7efcfedf699b6da</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-06 02:42:42</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=532956f62f700110e7efcfedf699b69c^sys_idNOT IN2b2956f62f700110e7efcfedf699b6c0,2f2956f62f700110e7efcfedf699b6b5,372956f62f700110e7efcfedf699b6cb,6f2956f62f700110e7efcfedf699b6ae,a32956f62f700110e7efcfedf699b6bb,bf2956f62f700110e7efcfedf699b6c5"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=de8a1112-4222-4bdd-97c5-44545896a7e4</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>country</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>country</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Parse Returned Data">532956f62f700110e7efcfedf699b69c</model>
+        <model_id>532956f62f700110e7efcfedf699b69c</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_532956f62f700110e7efcfedf699b69c</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-06 02:42:43</sys_created_on>
+        <sys_id>2b2956f62f700110e7efcfedf699b6c0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">ebc3062a2ff00110e7efcfedf699b6da</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-06 02:42:43</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=d61abd47-6d08-4e61-933e-a90688aaa73d</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>city</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>city</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Parse Returned Data">532956f62f700110e7efcfedf699b69c</model>
+        <model_id>532956f62f700110e7efcfedf699b69c</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_532956f62f700110e7efcfedf699b69c</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-06 02:42:43</sys_created_on>
+        <sys_id>2f2956f62f700110e7efcfedf699b6b5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">ebc3062a2ff00110e7efcfedf699b6da</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-06 02:42:43</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=dea74110-88fb-4534-b8ff-8a533aab9b5b</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>longitude</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>longitude</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Parse Returned Data">532956f62f700110e7efcfedf699b69c</model>
+        <model_id>532956f62f700110e7efcfedf699b69c</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_532956f62f700110e7efcfedf699b69c</name>
+        <next_element/>
+        <order>6</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-06 02:42:43</sys_created_on>
+        <sys_id>372956f62f700110e7efcfedf699b6cb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">ebc3062a2ff00110e7efcfedf699b6da</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-06 02:42:43</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=ad8909d5-169a-400d-8c64-4294b3ba6992</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>hostname</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>hostname</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Parse Returned Data">532956f62f700110e7efcfedf699b69c</model>
+        <model_id>532956f62f700110e7efcfedf699b69c</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_532956f62f700110e7efcfedf699b69c</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-06 02:42:42</sys_created_on>
+        <sys_id>6f2956f62f700110e7efcfedf699b6ae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">ebc3062a2ff00110e7efcfedf699b6da</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-06 02:42:42</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=f91dede2-9df9-410e-aaf3-c176682748b4</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>region</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>region</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Parse Returned Data">532956f62f700110e7efcfedf699b69c</model>
+        <model_id>532956f62f700110e7efcfedf699b69c</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_532956f62f700110e7efcfedf699b69c</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-06 02:42:43</sys_created_on>
+        <sys_id>a32956f62f700110e7efcfedf699b6bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">ebc3062a2ff00110e7efcfedf699b6da</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-06 02:42:43</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=e398fd68-4ce0-4f93-82dc-bd4d3c392ec8</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>latitude</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>latitude</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Parse Returned Data">532956f62f700110e7efcfedf699b69c</model>
+        <model_id>532956f62f700110e7efcfedf699b69c</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_532956f62f700110e7efcfedf699b69c</name>
+        <next_element/>
+        <order>5</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-06 02:42:43</sys_created_on>
+        <sys_id>bf2956f62f700110e7efcfedf699b6c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">ebc3062a2ff00110e7efcfedf699b6da</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-06 02:42:43</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Get Geographic Data from IP">74d546aa2ff00110e7efcfedf699b6d8</action>
+        <cid>bb5c2541-b5a0-4951-9719-cc29e06c1288</cid>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>Call IPInfo REST API</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-05 06:41:28</sys_created_on>
+        <sys_id>9b36caaa2ff00110e7efcfedf699b6d1</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="IPInfo Spoke">ebc3062a2ff00110e7efcfedf699b6da</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-06 06:24:03</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=9b36caaa2ff00110e7efcfedf699b6d1"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>9b36caaa2ff00110e7efcfedf699b6d1</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-05 06:49:30</sys_created_on>
+        <sys_id>0918022e2ff00110e7efcfedf699b6e4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-05 06:49:30</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="Headers">371837f1c71003007b237f48cb9763b0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>9b36caaa2ff00110e7efcfedf699b6d1</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-05 06:49:30</sys_created_on>
+        <sys_id>0d18022e2ff00110e7efcfedf699b6e4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-05 06:49:30</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="Query Parameters">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>9b36caaa2ff00110e7efcfedf699b6d1</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-05 06:41:29</sys_created_on>
+        <sys_id>2f36caaa2ff00110e7efcfedf699b6f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-05 06:41:29</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="Capabilities">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>9b36caaa2ff00110e7efcfedf699b6d1</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-05 06:41:29</sys_created_on>
+        <sys_id>6336caaa2ff00110e7efcfedf699b6f1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-05 06:51:09</sys_updated_on>
+        <value/>
+        <variable display_value="Resource Path">3d090af03b23320057a4a2e334efc455</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>9b36caaa2ff00110e7efcfedf699b6d1</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-05 06:41:29</sys_created_on>
+        <sys_id>6b36caaa2ff00110e7efcfedf699b6f1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-06 06:24:03</sys_updated_on>
+        <value>use_connection_alias</value>
+        <variable display_value="Connection">91e207d03b50030057a4a2e334efc4a0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>9b36caaa2ff00110e7efcfedf699b6d1</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-05 06:41:29</sys_created_on>
+        <sys_id>a336caaa2ff00110e7efcfedf699b6f2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-05 06:41:29</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>9b36caaa2ff00110e7efcfedf699b6d1</document_key>
+        <order>15</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-05 06:41:29</sys_created_on>
+        <sys_id>ef36caaa2ff00110e7efcfedf699b6f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-05 06:41:29</sys_updated_on>
+        <value>https://ipinfo.io</value>
+        <variable display_value="Base URL">a67a8ef03b23320057a4a2e334efc472</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>9b36caaa2ff00110e7efcfedf699b6d1</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-06 06:24:03</sys_created_on>
+        <sys_id>f5dbcbba2ff00110e7efcfedf699b6ec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-06 06:24:03</sys_updated_on>
+        <value>eed9077a2ff00110e7efcfedf699b6ad</value>
+        <variable display_value="Connection Alias">262882f03b23320057a4a2e334efc4f0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>9b36caaa2ff00110e7efcfedf699b6d1</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-06 06:24:03</sys_created_on>
+        <sys_id>fddbcbba2ff00110e7efcfedf699b6eb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-06 06:24:03</sys_updated_on>
+        <value>ef751ff07301330025d71afe2ff6a7f9</value>
+        <variable display_value="Retry Policy">37be397587c03300a8cc7d5e27cb0ba2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=9b36caaa2ff00110e7efcfedf699b6d1"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>9b36caaa2ff00110e7efcfedf699b6d1</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-05 06:41:29</sys_created_on>
+        <sys_id>ef36caaa2ff00110e7efcfedf699b6f0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-05 06:41:29</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>base_url</field>
+        <id>9b36caaa2ff00110e7efcfedf699b6d1</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-05 06:41:29</sys_created_on>
+        <sys_id>2f36caaa2ff00110e7efcfedf699b6f0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-05 06:41:29</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>capabilities</field>
+        <id>9b36caaa2ff00110e7efcfedf699b6d1</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-05 06:41:29</sys_created_on>
+        <sys_id>6b36caaa2ff00110e7efcfedf699b6f0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-05 06:41:29</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection</field>
+        <id>9b36caaa2ff00110e7efcfedf699b6d1</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-05 06:41:29</sys_created_on>
+        <sys_id>a736caaa2ff00110e7efcfedf699b6f0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-05 06:41:29</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_alias</field>
+        <id>9b36caaa2ff00110e7efcfedf699b6d1</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-06 06:24:03</sys_created_on>
+        <sys_id>f9dbcbba2ff00110e7efcfedf699b6eb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-06 06:24:03</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>headers</field>
+        <id>9b36caaa2ff00110e7efcfedf699b6d1</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-05 06:49:30</sys_created_on>
+        <sys_id>c118022e2ff00110e7efcfedf699b6e4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-05 06:49:30</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>query_params</field>
+        <id>9b36caaa2ff00110e7efcfedf699b6d1</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-05 06:49:30</sys_created_on>
+        <sys_id>8518022e2ff00110e7efcfedf699b6e4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-05 06:49:30</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>resource_path</field>
+        <id>9b36caaa2ff00110e7efcfedf699b6d1</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-05 06:41:29</sys_created_on>
+        <sys_id>af36caaa2ff00110e7efcfedf699b6ef</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-05 06:51:09</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>{{action.ip_address}}/json</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>retry_policy</field>
+        <id>9b36caaa2ff00110e7efcfedf699b6d1</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-06 06:24:03</sys_created_on>
+        <sys_id>35dbcbba2ff00110e7efcfedf699b6eb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-06 06:24:03</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=9b36caaa2ff00110e7efcfedf699b6d1^sys_idNOT INbddbcbba2ff00110e7efcfedf699b6db"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,isLocal=true,uiType=password2</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sn_auth_token</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">password2</internal_type>
+        <label>Credential Value</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="Call IPInfo REST API">9b36caaa2ff00110e7efcfedf699b6d1</model>
+        <model_id>9b36caaa2ff00110e7efcfedf699b6d1</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_9b36caaa2ff00110e7efcfedf699b6d1</name>
+        <next_element/>
+        <order>7</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-06 06:24:02</sys_created_on>
+        <sys_id>bddbcbba2ff00110e7efcfedf699b6db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">ebc3062a2ff00110e7efcfedf699b6da</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-06 06:24:02</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_action_input action="delete_multiple" query="model=74d546aa2ff00110e7efcfedf699b6d8^sys_idNOT IN7818022e2ff00110e7efcfedf699b6a3"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=ip_address,uiTypeLabel=IP Address,uiUniqueId=8a643740-a06a-4f66-9fcb-23964669537e</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>ip_address</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">ip_address</internal_type>
+        <label>IP address</label>
+        <mandatory>true</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Get Geographic Data from IP">74d546aa2ff00110e7efcfedf699b6d8</model>
+        <model_id>74d546aa2ff00110e7efcfedf699b6d8</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_74d546aa2ff00110e7efcfedf699b6d8</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-05 06:49:29</sys_created_on>
+        <sys_id>7818022e2ff00110e7efcfedf699b6a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">ebc3062a2ff00110e7efcfedf699b6da</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-05 06:49:29</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_output action="delete_multiple" query="model=74d546aa2ff00110e7efcfedf699b6d8^sys_idNOT IN00ac9e7a2f700110e7efcfedf699b64b,00ac9e7a2f700110e7efcfedf699b667,04ac9e7a2f700110e7efcfedf699b651,48ac9e7a2f700110e7efcfedf699b661,80ac9e7a2f700110e7efcfedf699b65c,9cac9e7a2f700110e7efcfedf699b678,c8ac9e7a2f700110e7efcfedf699b656"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=ip_address,uiTypeLabel=IP Address,uiUniqueId=eeaf6026-d987-439a-a487-480341be921c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>ip_address</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">ip_address</internal_type>
+        <label>IP address</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Get Geographic Data from IP">74d546aa2ff00110e7efcfedf699b6d8</model>
+        <model_id>74d546aa2ff00110e7efcfedf699b6d8</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_74d546aa2ff00110e7efcfedf699b6d8</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-06 02:57:45</sys_created_on>
+        <sys_id>00ac9e7a2f700110e7efcfedf699b64b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">ebc3062a2ff00110e7efcfedf699b6da</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-06 02:57:45</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=87ec4e55-7681-44cf-b9f7-a187fd3e8c42</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>latitude</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Latitude</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get Geographic Data from IP">74d546aa2ff00110e7efcfedf699b6d8</model>
+        <model_id>74d546aa2ff00110e7efcfedf699b6d8</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_74d546aa2ff00110e7efcfedf699b6d8</name>
+        <next_element/>
+        <order>6</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-06 02:57:46</sys_created_on>
+        <sys_id>00ac9e7a2f700110e7efcfedf699b667</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">ebc3062a2ff00110e7efcfedf699b6da</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-06 02:57:46</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=f0b92c3a-2b5b-41ef-a773-5501067bc6f1</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>hostname</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Hostname</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get Geographic Data from IP">74d546aa2ff00110e7efcfedf699b6d8</model>
+        <model_id>74d546aa2ff00110e7efcfedf699b6d8</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_74d546aa2ff00110e7efcfedf699b6d8</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-06 02:57:46</sys_created_on>
+        <sys_id>04ac9e7a2f700110e7efcfedf699b651</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">ebc3062a2ff00110e7efcfedf699b6da</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-06 02:57:46</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=2bbee650-8dc0-4d38-9091-1bb57840c7f3</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>country</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Country</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get Geographic Data from IP">74d546aa2ff00110e7efcfedf699b6d8</model>
+        <model_id>74d546aa2ff00110e7efcfedf699b6d8</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_74d546aa2ff00110e7efcfedf699b6d8</name>
+        <next_element/>
+        <order>5</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-06 02:57:46</sys_created_on>
+        <sys_id>48ac9e7a2f700110e7efcfedf699b661</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">ebc3062a2ff00110e7efcfedf699b6da</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-06 02:57:46</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=86699405-3721-40ef-a1f6-3dfbc4ec2a35</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>region</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Region</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get Geographic Data from IP">74d546aa2ff00110e7efcfedf699b6d8</model>
+        <model_id>74d546aa2ff00110e7efcfedf699b6d8</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_74d546aa2ff00110e7efcfedf699b6d8</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-06 02:57:46</sys_created_on>
+        <sys_id>80ac9e7a2f700110e7efcfedf699b65c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">ebc3062a2ff00110e7efcfedf699b6da</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-06 02:57:46</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=1090d853-1a9a-4d44-af0d-1ecaf3e73671</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>longitude</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Longitude</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get Geographic Data from IP">74d546aa2ff00110e7efcfedf699b6d8</model>
+        <model_id>74d546aa2ff00110e7efcfedf699b6d8</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_74d546aa2ff00110e7efcfedf699b6d8</name>
+        <next_element/>
+        <order>7</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-06 02:57:46</sys_created_on>
+        <sys_id>9cac9e7a2f700110e7efcfedf699b678</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">ebc3062a2ff00110e7efcfedf699b6da</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-06 02:57:46</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=ab10c522-d751-407c-8203-a9ae58afaf4d</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>city</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>City</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get Geographic Data from IP">74d546aa2ff00110e7efcfedf699b6d8</model>
+        <model_id>74d546aa2ff00110e7efcfedf699b6d8</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_74d546aa2ff00110e7efcfedf699b6d8</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-06 02:57:46</sys_created_on>
+        <sys_id>c8ac9e7a2f700110e7efcfedf699b656</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">ebc3062a2ff00110e7efcfedf699b6da</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-06 02:57:46</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_74d546aa2ff00110e7efcfedf699b6d8^sys_idNOT INf418022e2ff00110e7efcfedf699b6ab"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>ip_address</element>
+        <help/>
+        <hint>Find the physical location of this public IP address</hint>
+        <label>IP address</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_74d546aa2ff00110e7efcfedf699b6d8</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-05 06:49:30</sys_created_on>
+        <sys_id>f418022e2ff00110e7efcfedf699b6ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="IPInfo Spoke" source="x_425817_ipinfo_sp">ebc3062a2ff00110e7efcfedf699b6da</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">ebc3062a2ff00110e7efcfedf699b6da</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-05 06:49:30</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_74d546aa2ff00110e7efcfedf699b6d8^sys_idNOT IN0cac9e7a2f700110e7efcfedf699b65a,44ac9e7a2f700110e7efcfedf699b655,50ac9e7a2f700110e7efcfedf699b66b,88ac9e7a2f700110e7efcfedf699b665,8cac9e7a2f700110e7efcfedf699b64f,c0ac9e7a2f700110e7efcfedf699b660,dcac9e7a2f700110e7efcfedf699b67c"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>city</element>
+        <help/>
+        <hint/>
+        <label>City</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_74d546aa2ff00110e7efcfedf699b6d8</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-06 02:57:46</sys_created_on>
+        <sys_id>0cac9e7a2f700110e7efcfedf699b65a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="IPInfo Spoke" source="x_425817_ipinfo_sp">ebc3062a2ff00110e7efcfedf699b6da</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">ebc3062a2ff00110e7efcfedf699b6da</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-06 02:57:46</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>hostname</element>
+        <help/>
+        <hint/>
+        <label>Hostname</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_74d546aa2ff00110e7efcfedf699b6d8</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-06 02:57:46</sys_created_on>
+        <sys_id>44ac9e7a2f700110e7efcfedf699b655</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="IPInfo Spoke" source="x_425817_ipinfo_sp">ebc3062a2ff00110e7efcfedf699b6da</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">ebc3062a2ff00110e7efcfedf699b6da</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-06 02:57:46</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>latitude</element>
+        <help/>
+        <hint/>
+        <label>Latitude</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_74d546aa2ff00110e7efcfedf699b6d8</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-06 02:57:46</sys_created_on>
+        <sys_id>50ac9e7a2f700110e7efcfedf699b66b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="IPInfo Spoke" source="x_425817_ipinfo_sp">ebc3062a2ff00110e7efcfedf699b6da</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">ebc3062a2ff00110e7efcfedf699b6da</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-06 02:57:46</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>country</element>
+        <help/>
+        <hint/>
+        <label>Country</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_74d546aa2ff00110e7efcfedf699b6d8</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-06 02:57:46</sys_created_on>
+        <sys_id>88ac9e7a2f700110e7efcfedf699b665</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="IPInfo Spoke" source="x_425817_ipinfo_sp">ebc3062a2ff00110e7efcfedf699b6da</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">ebc3062a2ff00110e7efcfedf699b6da</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-06 02:57:46</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>ip_address</element>
+        <help/>
+        <hint/>
+        <label>IP address</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_74d546aa2ff00110e7efcfedf699b6d8</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-06 02:57:46</sys_created_on>
+        <sys_id>8cac9e7a2f700110e7efcfedf699b64f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="IPInfo Spoke" source="x_425817_ipinfo_sp">ebc3062a2ff00110e7efcfedf699b6da</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">ebc3062a2ff00110e7efcfedf699b6da</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-06 02:57:46</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>region</element>
+        <help/>
+        <hint/>
+        <label>Region</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_74d546aa2ff00110e7efcfedf699b6d8</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-06 02:57:46</sys_created_on>
+        <sys_id>c0ac9e7a2f700110e7efcfedf699b660</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="IPInfo Spoke" source="x_425817_ipinfo_sp">ebc3062a2ff00110e7efcfedf699b6da</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">ebc3062a2ff00110e7efcfedf699b6da</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-06 02:57:46</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>longitude</element>
+        <help/>
+        <hint/>
+        <label>Longitude</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_74d546aa2ff00110e7efcfedf699b6d8</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-06 02:57:46</sys_created_on>
+        <sys_id>dcac9e7a2f700110e7efcfedf699b67c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="IPInfo Spoke" source="x_425817_ipinfo_sp">ebc3062a2ff00110e7efcfedf699b6da</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">ebc3062a2ff00110e7efcfedf699b6da</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-06 02:57:46</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+</record_update>
